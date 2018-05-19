@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+	<title>Document</title>
+	 <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+   	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+   	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  	<script type="text/javascript" src="./javascripts/myjavascript.js"></script>
+</head>
+<body>
+	<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-3 column">
+		</div>
+		<div class="col-md-6 column">
+			<table class="table table-hover">
+				<thead>
+					<td style="text-align: center">
+						<div class="form-group">
+						<label class="sr-only" for="name">名称</label>
+						<input type="text" class="form-control" id="tittle" 
+			  			 onkeydown='if(event.keyCode==13){get()}' placeholder="What need to be done?">
+						</div>
+					</td>
+					<td><button class="btn btn-default btn-success" onclick="get()">提交</button></td>
+				</thead>
+  				<tbody id="container">
+  					<script>getContain()</script>
+				</tbody>
+				<tfoot>
+					<td  style="text-align: center;"> 
+						<div class="btn-group">
+  							<a type="button" href="#/all" class="btn  btn-default" onclick="showAll()">All</a>
+   							<a type="button" href="#/active" class="btn  btn-default" onclick="showActive()">Active</a>
+   							<a type="button" href="#/completed" class="btn  btn-default" onclick="showCompleted()">Complete</a>
+						</div>
+					</td>
+				</tfoot>
+			</table>
+		</div>
+		<div class="col-md-3 column">
+		</div>
+		</div>
+	</div>
+</body>
+</html>

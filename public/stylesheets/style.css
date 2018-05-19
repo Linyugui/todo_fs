@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+tbody{
+	color: white;
+
+	font-size: 20px;
+}
+tbody .completed{
+	width: 77%;
+	background-color: #ACE1AF;
+}
+tbody .uncompleted{
+	width: 77%;
+	background-color: #f3715c;
+}
